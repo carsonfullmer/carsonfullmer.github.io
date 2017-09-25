@@ -1,0 +1,43 @@
+/* First style sheet */
+
+body { 
+    font-size: 16px; 
+    line-height: 32px;
+    font-family: fantasy;
+    color: rosybrown;
+}
+
+h1 {
+    font-size: /* x.xrem  (rem is a unit of measure) */;
+    color: /* #xxxxxx */;
+}
+
+h2 {
+    font-size: /* x.xrem */;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+}
+
+header, main, footer {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: /* xxxpx (px = pixel is a unit of measure)  */;
+}
+
+header, footer, footer a {
+    text-align: center;
+    background-color: beige;
+    color: skyblue;
+}
+
+header img {
+    width: /*  */;
+    height: auto;
+    float: right;
+    color: black;
+}
+
+footer {
+    font-size: 4;
+    color: black;
+}
