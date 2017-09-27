@@ -2,14 +2,17 @@
 
 body { 
     font-size: 16px; 
-    line-height: 32px;
+    line-height: px;
     font-family: fantasy;
     color: rosybrown;
+    text-align: center;
+    
 }
 
 h1 {
     font-size: /* x.xrem  (rem is a unit of measure) */;
     color: /* #xxxxxx */;
+    text-align: center;
 }
 
 h2 {
@@ -21,23 +24,25 @@ h2 {
 header, main, footer {
     margin: 1.25rem auto;
     padding: .5rem;
-    max-width: /* xxxpx (px = pixel is a unit of measure)  */;
+    max-width: 126 px  */;
+    
 }
 
 header, footer, footer a {
     text-align: center;
-    background-color: beige;
+    background-color: black;
     color: skyblue;
 }
 
 header img {
-    width: /*  */;
+    
     height: auto;
-    float: right;
     color: black;
+    margin: center;
 }
 
 footer {
     font-size: 4;
-    color: black;
+    color: skyblue;
+    text-align: center;
 }
