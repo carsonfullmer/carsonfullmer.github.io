@@ -6,13 +6,23 @@ body {
     font-family: fantasy;
     color: green;
     text-align: center;
+     
     
+}
+
+head {
+    margin: 0 auto; 
+    border: 1px solid #bbb;          
+    padding: 5px;
+    background-color: #eee;
+    line-height: 1.5em;
 }
 
 h1 {
     font-size: 22px;
     color: red;
     text-align: center;
+   
 }
 
 h2 {
@@ -48,3 +58,4 @@ footer {
     text-align: center;
     
 }
+
