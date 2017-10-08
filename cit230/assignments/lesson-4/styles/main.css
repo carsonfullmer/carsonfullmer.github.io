@@ -2,21 +2,21 @@
 
 body { 
     font-size: 16px; 
-    line-height: px;
-    font-family: fantasy;
+    line-height:10 px;
+    font-family: sans-serif;
     color: green;
     text-align: center;
     
 }
 
 h1 {
-    font-size: /* x.xrem  (rem is a unit of measure) */;
-    color: /* #xxxxxx */;
+    font-size: 1.rem/* x.xrem  (rem is a unit of measure) */;
+    color: #0000/* #xxxxxx */;
     text-align: left;
 }
 
 h2 {
-    font-size: /* x.xrem */;
+    font-size: 34.rem/* x.xrem */;
     text-align: center;
     border-bottom: 1px solid #bbb;
 }
