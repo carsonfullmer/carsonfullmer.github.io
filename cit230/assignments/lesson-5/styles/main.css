@@ -1,0 +1,48 @@
+/* First style sheet */
+
+body { 
+    font-size: 16px; 
+    line-height:10 px;
+    font-family: sans-serif;
+    color: green;
+    text-align: center;
+    
+}
+
+h1 {
+    font-size: 1.rem/* x.xrem  (rem is a unit of measure) */;
+    color: #0000/* #xxxxxx */;
+    text-align: left;
+}
+
+h2 {
+    font-size: 34.rem/* x.xrem */;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+}
+
+header, main, footer {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 126 px  */;
+    
+}
+
+header, footer, footer a {
+    text-align: center;
+    background-color: black;
+    color: skyblue;
+}
+
+header img {
+    
+    height: auto;
+    color: black;
+    margin: center;
+}
+
+footer {
+    font-size: 4;
+    color: skyblue;
+    text-align: center;
+}
