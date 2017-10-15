@@ -7,11 +7,9 @@
 /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
-    font-size: 12px;
+    font-size: 18px;
     /* Declare the base font-family - from google font api or other */
 }
-
-
 
 header,
 nav,
@@ -23,9 +21,8 @@ footer {
 
 header {
     background-color: #7ec0ee;
-    height: 90px;
+    height: 64px;
     text-align: center;
-
 }
 
 header h1 {
@@ -38,12 +35,15 @@ header img {
     height: 90px;
     width: 90px;
     float: left;
+
+
 }
 
 header .subheading {
     padding: 0;
     margin: 0;
     text-align: center;
+    position: relative;
 
 }
 
@@ -55,31 +55,28 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: auto;
+    min-width: 600px;
     background-color: #f1f1f1;
     height: auto;
     overflow: hidden;
     font-size: 23px;
     float: left;
-    position: static;
-    
+
+
 }
 
 nav ul li {
     text-align: center;
     display: inline;
     border-bottom: none;
-    border-right: 3px solid #bbb;
-    width: 100px;
-
+    border-right: 2px solid #bbb;
 }
 
 nav ul li a {
     display: inline;
     color: #000;
-    padding: 43px;
+    padding: 50px;
     text-decoration: none;
-    max-width: 400px;
 }
 
 
@@ -108,21 +105,19 @@ main h2 {
 }
 
 .highlow {
-    font-size: 40px;
+    font-size: 20px;
     padding: 0;
     margin: 0;
 }
 
 .forecast {
-    font-size: 35px;
+    font-size: 30px;
     text-align: right;
 }
 
 
 main h3 {
-    font-size: 60px;
-    set: 200px;
-    left: 900px;
+    font-size: 30px;
     padding: 0;
     margin: 0;
     text-align: center;
@@ -134,16 +129,20 @@ main figure {
 }
 
 main figure img {
-    max-width: 100%;
+    width: 600 px;
+    float: right;
 
 }
 
-section {}
+section {
+    text-align: center;
+}
 
 article p.town-article img {
     /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
     width: 200px;
     height: 200px;
+
     /* fill the page in the small/phone view */
 }
 
@@ -151,13 +150,15 @@ footer {
     text-align: center;
     background-color: #004a99;
     color: white;
-    max-width: inherit;
+
+
 }
 
 footer aside {
     font-size: 20px;
     background-color: #7ec0ee;
     color: #000;
+
 }
 
 footer > p {}
