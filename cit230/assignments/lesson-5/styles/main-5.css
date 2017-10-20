@@ -21,22 +21,20 @@ footer {
 
 header {
     background-color: #7ec0ee;
-    height: 64px;
+    height: 5em;
     text-align: center;
 }
 
 header h1 {
     padding: 0;
     margin: 0;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 header img {
     height: 90px;
     width: 90px;
     float: left;
-
-
 }
 
 header .subheading {
@@ -55,34 +53,27 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    min-width: 600px;
     background-color: #f1f1f1;
     height: auto;
     overflow: hidden;
     font-size: 23px;
     float: left;
-
-
 }
 
 nav ul li {
     text-align: center;
-    display: inline;
-    border-bottom: none;
-    border-right: 2px solid #bbb;
+    display: none;
 }
 
 nav ul li a {
     display: inline;
     color: #000;
-    padding: 50px;
+    padding: 0;
     text-decoration: none;
 }
 
 
-li:last-child {
-    border-right: none;
-}
+li:last-child {}
 
 nav ul li a:hover {
     background-color: #007bff;
@@ -94,7 +85,9 @@ nav ul li a:active {
     color: #e6f2ff;
 }
 
-main {}
+main thead {
+    
+}
 
 main h2 {
     padding: 0;
@@ -111,7 +104,7 @@ main h2 {
 }
 
 .forecast {
-    font-size: 30px;
+    font-size: 16px;
     text-align: right;
 }
 
@@ -129,13 +122,16 @@ main figure {
 }
 
 main figure img {
-    width: 600 px;
+    width: 100 px;
+    height: 210px;
     float: right;
+    margin: 3px;
 
 }
 
 section {
     text-align: center;
+    font-size: 13px;
 }
 
 article p.town-article img {
@@ -150,15 +146,16 @@ footer {
     text-align: center;
     background-color: #004a99;
     color: white;
+    font-size: 12px;
 
 
 }
 
 footer aside {
-    font-size: 20px;
+    font-size: 12px;
     background-color: #7ec0ee;
     color: #000;
-
+    height: 100px;
 }
 
 footer > p {}
