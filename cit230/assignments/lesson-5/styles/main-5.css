@@ -152,10 +152,11 @@ footer {
 }
 
 footer aside {
-    font-size: 12px;
+    font-size: 11px;
     background-color: #7ec0ee;
     color: #000;
     height: 100px;
+    width: 100%;
 }
 
 footer > p {}
