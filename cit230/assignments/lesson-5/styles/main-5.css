@@ -141,18 +141,17 @@ article p.town-article img {
 
     /* fill the page in the small/phone view */
 }
-
 footer {
     text-align: center;
     background-color: #004a99;
     color: white;
-    font-size: 12px;
+    font-size: 10px;
 
 
 }
 
 footer aside {
-    font-size: 1px;
+    font-size: 15px;
     background-color: #7ec0ee;
     color: #000;
     height: 100px;
