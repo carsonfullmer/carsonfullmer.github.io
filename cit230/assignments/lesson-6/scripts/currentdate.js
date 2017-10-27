@@ -1,6 +1,8 @@
+<!DOCTYPE html>
+
 <button onclick="myFunction()">Try it</button>
 
-
+<p id="demo"></p>
 function myFunction() {
     var d = new Date();
     var weekday = new Array(7);
@@ -13,5 +15,5 @@ function myFunction() {
     weekday[6] = "Saturday";
 
     var n = weekday[d.getDay()];
-    document.getElementById("date").innerHTML = n;
- 
+    document.getElementById("demo").innerHTML = n;
+}

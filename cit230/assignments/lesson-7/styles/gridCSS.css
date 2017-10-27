@@ -1,0 +1,25 @@
+{
+    box-sizing: border-box;
+}
+
+.grid  {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+   
+}
+
+img, div .grid{
+    width: 150px;
+    height: 150px;
+   
+}
+
+img:hover {
+    box-shadow: 8px 5px 10px;
+    color: #000;
+}
+
+img:active {
+    color: gray;
+}

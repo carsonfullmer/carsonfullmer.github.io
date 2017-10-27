@@ -10,7 +10,7 @@
     /* show the 10-day forecast with the medium view and up */
     article p.town-article img {
         width: 62.666%;
-        float: right;
+        justify-content: flex-start;
     }
 
     nav ul li a:hover {
@@ -26,7 +26,7 @@
     header img {
         height: 100px;
         width: 100px;
-        float: left;
+        justify-content: flex-start;
     }
     
     header h1 {
@@ -42,8 +42,8 @@
         height: auto;
         width: 100%;
         overflow: hidden;
-        font-size: 19px;
-        float: left;
+        font-size: 12px;
+        justify-content: flex-end;
     }
 
     nav ul li {
@@ -106,7 +106,7 @@
     main figure img {
         width: 400px;
         height: 250px;
-        float: right;
+        justify-content: flex-end;
         margin: 0 0 0 5%;
 
     }
@@ -124,7 +124,7 @@
     }
 
     footer {
-        text-align: center;
+        text-align: ;
         background-color: #004a99;
         color: white;
 
