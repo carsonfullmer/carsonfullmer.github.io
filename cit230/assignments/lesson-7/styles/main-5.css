@@ -20,24 +20,31 @@ footer {
 }
 
 header {
+    display: flex;
+    align-content: center;
     background-color: #7ec0ee;
     height: 5em;
-    text-align: center;
 }
 
 header h1 {
+    display: flex;
     padding: 0;
     margin: 0;
     font-size: 25px;
+    justify-content: center;
 }
 
 header img {
+    display: flex;
+    justify-content: flex-start;
     height: 90px;
     width: 90px;
-    float: left;
+    
 }
 
 header .subheading {
+    display: flex;
+    align-items: flex-end;
     padding: 0;
     margin: 0;
     text-align: center;
@@ -122,9 +129,10 @@ main figure {
 }
 
 main figure img {
+    display: flex;
+    justify-content: flex-start;
     width: 100 px;
     height: 210px;
-    float: right;
     margin: 3px;
 
 }
@@ -158,6 +166,28 @@ footer aside {
     color: #000;
     height: 100px;
     width: 100%;
+}
+
+.grid  {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+   
+}
+
+img, div .grid {
+    width: 250px;
+    height: 200px;
+   
+}
+
+ .grid div img:hover {
+    box-shadow: none;
+    color: none;
+}
+
+.grid div img:active {
+    color: none;
 }
 
 footer > p {}

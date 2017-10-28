@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Title</title>
+<script type="text/javascript">
+/* Input: Type in the wind speed and the temperature
+ * Processing:
+ * Output: Display the wind chill
+ */
+function doInputOutput(){
+	var s = parseFloat(document.getElementById('speed').value);
+	var t = parseFloat(document.getElementById('temp').value);
+
+ // Call windChil function
+	var result = windChill(t, s);
+
+	document.getElementById('output').innerHTML = result;
+}
+
+function windChill(tempF, speed){
+	
+	var f = 35.74 + 0.6215 * tempF - 35.75 * Math.pow(speed, 0.16) + 0.4275  * tempF * Math.pow(speed, 0.16);
+	return f;
+}
+
+
+</script>
+</head>
+<body>
+Temperature<input type="text" id="temp" size = "3"><br>
+Wind speed<input type="text" id="speed" size = "2"><br>
+<button type="button" onclick="doInputOutput()">Wind Chill</button>
+<div id= "output"></div>
+</body>
+</html>

@@ -15,6 +15,7 @@
     }
 
     header h1 {
+        text-align: center;
         padding: 0;
         margin: 0;
         font-size: 40px;
@@ -26,7 +27,6 @@
         padding: 0;
         background-color: #f1f1f1;
         font-size: 23px;
-        justify-content: center;
         flex-basis: 20%;
     }
 
@@ -87,7 +87,6 @@
     main figure img {
         width: 450px;
         height: 300px;
-        float: right;
         padding: 1em;
 
     }
@@ -120,4 +119,30 @@
     }
 
     footer > p {}
+
+{
+    box-sizing: border-box;
+}
+
+.grid  {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+   
+}
+
+img, div .grid {
+    width: 250px;
+    height: 200px;
+   
+}
+
+ .grid div img:hover {
+    box-shadow: 6px 6px 10px;
+    color: dimgray;
+}
+
+.grid div img:active {
+    color: #000;
+}
 }
