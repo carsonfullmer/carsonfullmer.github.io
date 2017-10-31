@@ -1,20 +1,15 @@
 /*Input: Get wind speed and temperature
- *Processing:
- *Output: Display the wind chill
+ *Processing: The formula for wind chill is entered, and are calculated based off of the speed and temperature entered.
+ *Output: Display the wind chill in ° Faherenheit
  */
 
-function doInputOutput() {
-    var s= parseFloat(document.getElementsById('speed').value);
-    var t= parseFloat(document.getElementById('temp').value);
-    
-//Call windChill function
-    var result= windChill (t, s);
-    
-    document.getElementById('output').innerHTML= result;
-}
-
-funtion windChill(tempF, speed){
-    
-    var f= 35.74 + 0.6215 * tempF - 35.75 * Math.pow(speed, 0.16) + 0.4275  * tempF * Math.pow(speed, 0.16);
+function windChill(temp, speed){
+	var f = Math.round(35.74 + 0.6215 * temp - 35.75 * Math.pow(speed, 0.16) + 0.4275  * temp * Math.pow(speed, 0.16));
 	return f;
 }
+ 
+	var result = windChill(50, 3);
+
+	document.getElementById('output').innerHTML = result;
+
+
