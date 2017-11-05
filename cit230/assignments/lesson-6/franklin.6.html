@@ -19,24 +19,26 @@
     <link href="styles/large-5.css" rel="stylesheet">
     <!-- large/wide/desktop views -->
 
-   
-    
-    
+
+
+
 
 </head>
 
 <body>
 
     <header>
-        <img src="images/weather-image.jpg" alt="The site logo" >
+
+        <img src="images/weather-image.jpg" alt="The site logo">
         <h1>What's the weather?</h1>
         <div class="subheading">Should you stay in, or should you go out?</div>
     </header>
 
     <!-- site navigation use placeholder references -->
     <nav>
-        <button onclick="toggleNavMenu()">&#9776;</button>
-        <ul>
+        <button class="hamburger" onclick="toggleNavMenu()">&#9776;
+        </button>
+        <ul class="navgation">
             <li><a href="#">Home</a></li>
             <li class="active"><a href="#">Franklin</a></li>
             <li><a href="#">Greenville</a></li>
@@ -48,9 +50,8 @@
 
     <main>
         <h2>Franklin</h2>
-        <figure class= "myphoto">
-            <img src="images/clouds.jpg" sizes= "50 vw" alt="clouds"
-            srcset="images/clouds185.png 300w, images/clouds500.png 500w, images/clouds650.png 800w">
+        <figure class="myphoto">
+            <img src="images/clouds.jpg" sizes="50 vw" alt="clouds" srcset="images/clouds185.png 300w, images/clouds500.png 500w, images/clouds650.png 800w">
         </figure>
         <section>
             <h3>Weather Summary</h3>
@@ -117,7 +118,7 @@
         <aside>
             (222-222-2222)<br> 1234 Sunnyside Ln.<br> Rexburg, ID 83440
         </aside>
-        <p class="footer-bar">&copy;2017 All Rights Reserved | What's the weather? | <span id="currentdate"></span></p>
+        <p class="footer-bar">&copy;2017 All Rights Reserved | What's the weather? | <span id="demo"></span></p>
     </footer>
 
     <script src="scripts/hamburger.js"></script>
