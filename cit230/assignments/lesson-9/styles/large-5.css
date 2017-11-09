@@ -15,19 +15,19 @@
     }
 
     header h1 {
-        text-align: center;
+        display: flex;
+        justify-content: center;
         padding: 0;
         margin: 0;
         font-size: 40px;
     }
-    
     
     nav ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         background-color: #f1f1f1;
-        font-size: 23px;
+        font-size: 20px;
         flex-basis: 20%;
     }
 

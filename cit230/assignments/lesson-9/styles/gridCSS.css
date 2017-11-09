@@ -1,0 +1,28 @@
+@media only screen and (min-width: 6em){
+    
+}
+{
+    box-sizing: border-box;
+}
+
+.grid  {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+   
+}
+
+img, div .grid{
+    width: 250px;
+    height: 200px;
+   
+}
+
+img:hover {
+    box-shadow: 6px 6px 10px;
+    color: dimgray;
+}
+
+img:active {
+    color: #000;
+}
