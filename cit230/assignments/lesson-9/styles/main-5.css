@@ -8,6 +8,7 @@
 
 body {
     font-size: 18px;
+    
     /* Declare the base font-family - from google font api or other */
 }
 
@@ -39,7 +40,7 @@ header img {
     justify-content: flex-start;
     height: 90px;
     width: 90px;
-    
+
 }
 
 header .subheading {
@@ -65,7 +66,7 @@ nav ul {
     font-size: 23px;
     display: flex;
     justify-content: space-between;
-   
+
 }
 
 nav ul li {
@@ -93,9 +94,15 @@ nav ul li a:active {
     color: #e6f2ff;
 }
 
-main thead {
-    
+label {
+    display: block;
+    margin: 1em 3%;
 }
+
+label span {
+    display: block;
+}
+
 
 .highlow {
     font-size: 20px;
@@ -142,16 +149,20 @@ section {
 }
 
 
-table, th, td {
+table,
+th,
+td {
     border: 1px solid #000;
 }
 
-th, td {
+th,
+td {
     background-color: #7ec0ee;
 }
 
 
 }
+
 article p.town-article img {
     /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
     width: 400px;
@@ -161,6 +172,7 @@ article p.town-article img {
 
     /* fill the page in the small/phone view */
 }
+
 footer {
     text-align: center;
     background-color: #004a99;
@@ -178,20 +190,21 @@ footer aside {
     width: 100%;
 }
 
-.grid  {
+.grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 10px;
-   
+
 }
 
-img, div .grid {
+img,
+div .grid {
     width: 250px;
     height: 200px;
-   
+
 }
 
- .grid div img:hover {
+.grid div img:hover {
     box-shadow: none;
     color: none;
 }

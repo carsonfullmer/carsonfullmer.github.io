@@ -13,6 +13,8 @@
         width: 100px;
        
     }
+    
+
 
     header h1 {
         display: flex;
@@ -41,6 +43,10 @@
         color: #000;
         padding: 15px;
     }
+    
+    form#strmPage {
+    margin: 1em 3%;
+}
     main {}
 
     main h2 {

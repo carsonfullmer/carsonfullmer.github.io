@@ -16,6 +16,8 @@
         background-color: #007bff;
         color: #e6f2ff;
     }
+    
+    
 
     nav ul li a:active {
         background-color: #004a99;
@@ -56,8 +58,6 @@
         color: #000;
         padding: 15px;
     }
-
-    main {}
 
     main h2 {
         padding: 1em 0 0 0;
