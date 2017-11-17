@@ -118,6 +118,7 @@
         width: 200px;
         height: 160px;
         display: flex;
+        justify-content: center;
 
         /* fill the page in the small/phone view */
     }

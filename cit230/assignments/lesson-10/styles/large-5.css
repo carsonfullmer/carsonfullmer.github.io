@@ -91,8 +91,6 @@
     }
 
     main figure img {
-        display: flex;
-        j
         width: 450px;
         height: 300px;
         padding: 1em;
@@ -104,8 +102,9 @@
 
     article p.town-article img {
         /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-        width: 200px;
-        height: 200px;
+        width: 400px;
+        height: 350px;
+        
 
         /* fill the page in the small/phone view */
     }
