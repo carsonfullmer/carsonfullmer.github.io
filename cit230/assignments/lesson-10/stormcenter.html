@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Storm Center</title>
+
+    <meta name="author" content="Carson Fullmer">
+    <meta name="description" content="page description placeholder">
+    <!-- external style references in the proper cascading order -->
+    <link href="https://fonts.googleapis.com/css?family=#" rel="stylesheet">
+    <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/main-5.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/medium-5.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/large-5.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+    <link href="franklin.9noMod.html">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/weather-image.jpg" alt="The site logo">
+        <h1>What's the weather?</h1>
+        <div class="subheading">Should you stay in, or should you go out?</div>
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul>
+            <li><a href="franklin.html">Home</a></li>
+            <li class="active"><a href="franklin.html">Franklin</a></li>
+            <li><a href="greenville.html">Greenville</a></li>
+            <li><a href="springfield.html">Springfield</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Storm Center</h2>
+        <form action="thanks.html" method="post" enctype="multipart/form-data" name="storm" id="strmPage" >
+            <fieldset>
+                <label><span>Full Name: </span><input type="text" name="fullname" value="" placeholder="Full Name" pattern="[a-zA-z]{5, 99}" required></label>
+                <label><span>Email: </span><input type="email" name="email" value="" placeholder="myemail@gmail.com" required></label>
+                <label><span>Phone number: </span><input type="tel" name="phoneNumber" value="" placeholder="3334445555" pattern="[0-9]{10, 20}" required></label>
+                <label><span>Zip Code: </span><input type="number" name="zip" value="" placeholder="83440" pattern="[0-9]{5, 10}" required></label>
+                <label><span>Storm Date: </span><input type="date" name="strmDate" value="" placeholder="Date of storm" pattern="[0-9]{1,99}" required></label>
+                <label><span>Storm Type: </span><input type="text" name="strmType" list="type"></label>
+                <datalist id="type"><span>
+            <option value="Flash Flood"></option>
+            <option value="Hail"></option>
+            <option value="Hurrucane"></option>
+            <option value="Thunderstorm"></option>
+            <option value="Tornado"></option>
+        </span></datalist>
+                <label for="rating"><span>Rating (1 to 10)</span></label>
+                <label><input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"></label>
+                    <label><span id="ratingvalue">5</span></label><br>
+                <label><span>Storm Region: </span><input type="text" name="region" value="" placeholder="Full Name" pattern="[a-zA-z]{5,10}"></label>
+                <label>Storm region</label>
+               <label><span><select name="stormRegion">
+                    <option value="" disabled selected>Select Region</option>
+                    <option value="">Franklin</option>
+                    <option value="">Greenville</option>
+                    <option value="">Springfield</option>
+                   </select></span></label>
+                <label><span>Danger Level:<br> </span><input type="radio" name="danger" value="Yes">Yes<br>
+                             <input type="radio" name="danger" value="No">No<br>
+            <input type="radio" name="danger" value="Maybe">Maybe<br></label>
+                <label><span>Additional Comments: </span><input type="text" name="comments" placeholder=""></label>
+                    <label><input type="submit" name="submit">
+                </label>
+            </fieldset>
+        </form>
+
+
+        <footer>
+            <aside>
+                (222-222-2222)<br> 1234 Sunnyside Ln.<br> Rexburg, ID 83440
+            </aside>
+            <p class="footer-bar">&copy;2017 All Rights Reserved | What's the weather? | <span id="currentdate"></p>
+        </footer>
+
+    </main>
+
+
+
+
+    <script src="scripts/adjustRating.js" type="text/javascript"></script>
+
+</body>
+
+
+
+</html>

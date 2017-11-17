@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>What's the weather?</title>
+    <meta name="author" content="Carson Fullmer">
+    <meta name="description" content="page description placeholder">
+    <!-- external style references in the proper cascading order -->
+    <link href="https://fonts.googleapis.com/css?family=#" rel="stylesheet">
+    <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/main-5.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/medium-5.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/large-5.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+</head>
+
+<body>
+    <header>
+        <img src="images/weather-image.jpg" alt="The site logo" >
+        <h1>What's the weather?</h1>
+        <div class="subheading">Should you stay in, or should you go out?</div>
+    </header>
+    
+    <!-- site navigation use placeholder references -->
+    <nav>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li class="active"><a href="franklin.9noMod.html">Franklin</a></li>
+            <li><a href="">Greenville</a></li>
+            <li><a href="">Springfield</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.8.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <div class="grid">
+        <div><a href="franklin.9noMod.html"><img src="images/hurricane.jpg" alt="hurricane"><br>Hurricane</a></div>
+        <div><a href="franklin.9noMod.html"><img src="images/rain.jpg" alt="rain"><br>Rain</a></div>
+        <div><a href="franklin.9noMod.html"><img src="images/tornado.jpg" alt="tornado"><br>Tornado</a></div>
+        <div><a href="franklin.9noMod.html"><img src="images/sunny.jpg" alt="sunny"><br>Sunny</a></div>
+        <div><a href="franklin.9noMod.html"><img src="images/rainbow.jpg" alt="rainbow"><br>Rainbow</a></div>
+        <div><a href="franklin.9noMod.html"><img src="images/lightning.jpb.jpg" alt="lightning"><br>Lightning</a></div>
+    </div>
+    <footer>
+        <aside>
+            (222-222-2222)<br> 1234 Sunnyside Ln.<br> Rexburg, ID 83440
+        </aside>
+        <p class="footer-bar">&copy;2017 All Rights Reserved | What's the weather? | <span id="currentdate">Current Date</span></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>What's the weather?</title>
+    <meta name="author" content="Carson Fullmer">
+    <meta name="description" content="page description placeholder">
+    <!-- external style references in the proper cascading order -->
+    <link href="https://fonts.googleapis.com/css?family=#" rel="stylesheet">
+    <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/main-5.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/medium-5.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/large-5.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+</head>
+
+<body>
+
+    <header>
+        <img src="images/weather-image.jpg" alt="The site logo">
+        <h1>What's the weather?</h1>
+        <div class="subheading">Should you stay in, or should you go out?</div>
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul id="mainmenu">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="franklin.html">Franklin</a></li>
+            <li><a href="greenville.html">Greenville</a></li>
+            <li><a href="springfield.html">Springfield</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Franklin</h2>
+        <figure class="myphoto">
+            <img src="images/clouds.jpg" sizes="50 vw" alt="clouds" srcset="images/clouds185.png 300w, images/clouds500.png 500w, images/clouds650.png 800w">
+        </figure>
+        <section>
+            
+            <h3>Weather Summary</h3>
+            <div class="highlow">
+                <p>High: 78 degrees</p>
+                <p>Low: 42 degrees</p>
+            </div>
+            <div class="current">
+                Sunny
+                <picture>
+
+                </picture>
+            </div>
+            <div class="conditions">
+                <p>Precipitation:</p>
+                <p>Temperature: 50° Faherenheit</p>
+                <p>Wind Speed: 3 miles/hour</p>
+                <p>Wind Chill: Feels like <span id="output">Chill</span>° Faherenheit
+            </div>
+        </section>
+        <section class="forecast">
+            <h3>10 Day Forecast</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day 1</th>
+                        <th>Day 2</th>
+                        <th>Day 3</th>
+                        <th>Day 4</th>
+                        <th>Day 5</th>
+                        <th>Day 6</th>
+                        <th>Day 7</th>
+                        <th>Day 8</th>
+                        <th>Day 9</th>
+                        <th>Day 10</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>89&deg;F</td>
+                        <td>87&deg;F</td>
+                        <td>78&deg;F</td>
+                        <td>75&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>79&deg;F</td>
+                        <td>83&deg;F</td>
+                        <td>85&deg;F</td>
+                        <td>89&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <article>
+            <h3>Franklin Article</h3>
+            <p class="town-article">
+                <img src="images/light-festival.jpg" alt="**lights-image**"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pulvinar tortor justo, varius sagittis lectus tincidunt quis. Nunc convallis sollicitudin diam quis aliquet. Ut odio risus, porttitor eu cursus non, scelerisque ac libero. Proin nec nunc porta, sollicitudin tortor sit amet, sodales erat. Phasellus in erat ac velit pulvinar luctus nec a est. Vivamus id odio sem. Nullam rhoncus massa eget lectus bibendum ullamcorper sed a diam. Fusce at ipsum vel diam aliquet laoreet quis quis odio. Aliquam nec libero ut lectus congue tincidunt. Nam sit amet pretium eros, ut vestibulum ex. Vivamus ac dui et augue porta convallis. Fusce consequat magna vel mauris convallis sollicitudin.
+
+
+            </p>
+        </article>
+
+    </main>
+
+    <footer>
+        <aside>
+            (222-222-2222)<br> 1234 Sunnyside Ln.<br> Rexburg, ID 83440
+        </aside>
+        <p class="footer-bar">&copy;2017 All Rights Reserved | What's the weather? | <span id="currentdate"></span></p>
+    </footer>
+
+    <script src="scripts/modularize.js"></script>
+    <script src="scripts/w3.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js" type="text/javascript"></script>
+
+
+
+
+</body>
+
+    <script>
+//remember to add an ID of "mainmenu" to the nav ul
+var urlString = document.location.href;
+var urlArray = urlString.split('/');
+var pageHREF=urlArray[urlArray.length-1];
+
+if (pageHREF !=="") {
+	var menu = document.querySelectorAll('ul#mainmenu li a');
+	var i;
+	//loop through all the menu items in the navigation
+	for(i=0; i<menu.length; i++) {
+		var currentURL=(menu[i].getAttribute("href"));
+		menu[i].parentNode.className=""; //turn off hilighting by default
+		if (currentURL===pageHREF) {
+			menu[i].parentNode.className="active";	//turn on if a match
+		} // end if
+	} // end of the search for a match
+} // end of if !==
+</script>
+    
+
+</html>
