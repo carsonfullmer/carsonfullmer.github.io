@@ -8,7 +8,7 @@
     <meta name="author" content="Carson Fullmer">
     <meta name="description" content="page description placeholder">
     <!-- external style references in the proper cascading order -->
-       <link href="https://fonts.googleapis.com/css?family=Coustard" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coustard" rel="stylesheet">
     <!-- Google API font reference -->
     <link href="styles/normalize.css" rel="stylesheet">
     <!-- normalize useragent/browser defaults -->
@@ -18,14 +18,14 @@
     <!-- medium/tablet views -->
     <link href="styles/large-5.css" rel="stylesheet">
     <!-- large/wide/desktop views -->
-    
-     <style>
-        body {
-            font-family: 'Coustard', cursive;
-            font-size: 20px;
-        }
-    </style>
 </head>
+<style>
+    body {
+        font-family: 'Coustard', cursive;
+        font-size: 20px;
+    }
+
+</style>
 
 <body>
 
@@ -36,7 +36,7 @@
     </header>
 
     <!-- site navigation use placeholder references -->
-    <nav>
+    <nav id="nav" class="nav">
         <button onclick="toggleNavMenu()">&#9776;</button>
         <ul id="mainmenu">
             <li><a href="index1.html">Home</a></li>
@@ -54,7 +54,7 @@
             <img src="images/clouds.jpg" sizes="50 vw" alt="clouds" srcset="images/clouds185.png 300w, images/clouds500.png 500w, images/clouds650.png 800w">
         </figure>
         <section>
-            
+
             <h3>Weather Summary</h3>
             <div class="highlow">
                 <p>High: 78&deg</p>
@@ -136,25 +136,26 @@
 
 </body>
 
-    <script>
-//remember to add an ID of "mainmenu" to the nav ul
-var urlString = document.location.href;
-var urlArray = urlString.split('/');
-var pageHREF=urlArray[urlArray.length-1];
+<script>
+    //remember to add an ID of "mainmenu" to the nav ul
+    var urlString = document.location.href;
+    var urlArray = urlString.split('/');
+    var pageHREF = urlArray[urlArray.length - 1];
 
-if (pageHREF !=="") {
-	var menu = document.querySelectorAll('ul#mainmenu li a');
-	var i;
-	//loop through all the menu items in the navigation
-	for(i=0; i<menu.length; i++) {
-		var currentURL=(menu[i].getAttribute("href"));
-		menu[i].parentNode.className=""; //turn off hilighting by default
-		if (currentURL===pageHREF) {
-			menu[i].parentNode.className="active";	//turn on if a match
-		} // end if
-	} // end of the search for a match
-} // end of if !==
+    if (pageHREF !== "") {
+        var menu = document.querySelectorAll('ul#mainmenu li a');
+        var i;
+        //loop through all the menu items in the navigation
+        for (i = 0; i < menu.length; i++) {
+            var currentURL = (menu[i].getAttribute("href"));
+            menu[i].parentNode.className = ""; //turn off hilighting by default
+            if (currentURL === pageHREF) {
+                menu[i].parentNode.className = "active"; //turn on if a match
+            } // end if
+        } // end of the search for a match
+    } // end of if !==
+
 </script>
-    
+
 
 </html>
