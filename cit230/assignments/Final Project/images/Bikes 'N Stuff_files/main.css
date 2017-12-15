@@ -1,0 +1,247 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    background-color: #654321;
+    
+    /* Declare the base font-family - from google font api or other */
+}
+
+header,
+nav,
+main,
+footer {
+    /* the comma means apply the following CSS declarations to all of the listed elements */
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {
+    font-family: righteous;
+    font-size: 40px;
+    background-color: #006600;
+}
+
+header h1 {
+    display: inline-block;
+    justify-content: flex-start;
+    font-size: 40px;
+    padding: 1em;
+    margin: 0;
+}
+
+header img {
+    height: 3em;
+    width: 3.5em;;
+
+}
+
+header .subheading {
+    display: flex;
+}
+
+nav {
+}
+
+nav button {}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+nav ul li {
+    display: none;
+}
+
+nav ul li a {
+    color: #000;
+}
+
+li:last-child {}
+
+nav ul li a:hover {
+   
+}
+
+nav ul li .active a {
+}
+
+label {  
+}
+
+label span {
+}
+
+
+.highlow {
+    
+}
+
+.forecast {
+    
+}
+
+
+main h2 {
+   
+
+}
+
+main h3 {
+    
+}
+
+main .img1 {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+main .img1 img {
+    max-width: 40%;
+    max-height: 10%;
+}
+
+main span .p1 {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 0 2em 0;
+
+}
+
+main .img2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+main .img2 img {
+    display: flex;
+    justify-content: flex-end;
+}
+
+main span .p2 {
+    display: flex;
+    justify-content: flex-end;
+}
+main figure img {
+    width: 90%;
+}
+
+table,
+th,
+td {
+}
+
+th,
+td {
+}
+
+
+}
+
+article p.town-article img {
+    /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+   
+    /* fill the page in the small/phone view */
+}
+
+footer {
+    text-align: center;
+    bottom: 0;
+    background-color: #006600;
+    height: 100%; 
+}
+
+footer aside {
+
+}
+
+.grid {}
+
+img,
+div .grid {}
+
+.grid div img:hover {}
+
+.grid div img:active {}
+
+footer > p {}
+
+/* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
+
+
+
+
+
+
+@media only screen and (min-width: 37.5em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    nav button {
+        display: none;
+    }
+    /* hamburger button does not need to be shown */
+    section.forecast {}
+    /* show the 10-day forecast with the medium view and up */
+    article p.town-article img {}
+
+    nav ul li a:hover {}
+
+
+
+
+    header img {}
+
+    header h1 {}
+
+    header .subheading {}
+
+    nav ul {}
+
+    nav ul li {
+        display: inline-flex;
+    }
+
+    nav ul li a {}
+    
+    nav ul li a.active {}
+
+    main h2 {}
+
+    .highlow {}
+
+    .forecast {}
+
+
+    main h3 {}
+
+    main figure {}
+
+    main figure img {}
+
+    section {}
+
+    article p.town-article img {
+        /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+        /* fill the page in the small/phone view */
+    }
+
+    footer {}
+
+    footer aside {}
+
+    footer > p {}
+    /* responsive images */
+    .grid {}
+
+
+    .grid div img:hover {}
+
+    .grid div img:active {}
+}

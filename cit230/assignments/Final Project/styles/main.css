@@ -1,0 +1,374 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    background-color: #C5AB84;
+    font-family: righteous;
+
+    /* Declare the base font-family - from google font api or other */
+}
+
+header,
+nav,
+main,
+footer {
+    /* the comma means apply the following CSS declarations to all of the listed elements */
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {
+    font-family: righteous;
+    font-size: 40px;
+    background-color:  #5C872D;
+    position: inherit;
+}
+
+header h1 {
+    display: inline-block;
+    justify-content: flex-start;
+    font-size: 25px;
+    padding: 1em;
+    margin: 0;
+}
+
+header img {
+    max-width: 30%;
+    max-height:200px;
+    border-collapse: collapse;
+}
+
+header .subheading {
+    display: flex;
+}
+
+
+ul.references {
+    padding: 0 0 5em 0;
+    margin: 2em;
+    text-align: center;
+    list-style-type: none;
+    }
+
+ul li iframe {
+    max-width: 80%;
+}
+
+nav button {}
+
+nav ul {
+    display: none;
+}
+
+
+.bikeRace {
+    display: flex;
+    justify-content: center;
+}
+
+
+.continental p {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+
+
+.signup {
+    position: absolute;
+    border: 1px solid #000;
+    margin: 1em;
+    background-color: #5C872D;
+    max-width: 15%;
+    font-size: 10px;
+}
+
+main .img1,.img2,
+.img3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 12px;
+}
+
+main .img1 img, .img2 img,
+.img3 img {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 17em;
+}
+
+main .img2 {
+    background-color: #D0C09D;
+}
+.img1 img, .img2 img, .img3 img  {
+    margin: 1em;
+}
+
+.p1, .p2, .p3 {
+    margin: 1em;
+}
+
+main figure {
+    display: flex;
+    justify-content: center;
+}
+
+main figure img {
+    max-width: 90%;
+
+}
+
+div.map {
+    display: flex;
+    justify-content: center;
+    max-width: 80%;
+    padding: 0 6em 0 6em;
+ 
+}
+
+main h1 {
+    display: flex;
+    justify-content: center;
+}
+
+main h2 {
+    text-align: center;
+    
+}
+
+label {
+    display: block;
+    text-align: center;
+    margin: 1em 3%;
+}
+
+label span {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-family: righteous;
+}
+
+fieldset {
+    font-size: 25px;
+}
+
+.bikeTour {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+
+}
+
+.landscape {
+    display: grid;
+    grid-template-columns: 2fr;
+}
+
+.services {
+    text-align: center;
+}
+
+table thead th {
+    font-size: 20px;
+}
+table tbody li {
+    font-size: 12px;
+    padding: .5em;
+}
+
+table,
+th,
+td {
+    list-style-type: none;
+    padding: 0 0 2em 0;
+}
+
+th,
+td {
+    border: 1px solid black;
+    background-color: #D0C09D;
+    box-shadow: .7em .7em .5em;
+}
+
+footer {
+    text-align: center;
+    bottom: 0;
+    background-color: #5C872D;
+    height: 100%;
+}
+
+.grid div img:hover {}
+
+.grid div img:active {}
+
+footer > p {}
+
+/* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
+
+@media only screen and (min-width: 38em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    nav button {
+        display: none;
+    }
+    /* hamburger button does not need to be shown */
+
+
+
+    header img {
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+
+    header .subheading {}
+
+    main .img1,.img2,
+    .img3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 1em;
+        font-size: 20px;
+    }
+
+    main .img1 img, .img2 img,
+    .img3 img {
+
+        max-height: 10%;
+    }
+
+    main span .p1, .p2, .p3 {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+
+    
+    nav ul {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        font-size: 15px;
+        padding: 0;
+    }
+    
+
+    .signup {
+        font-size: 15px;
+    }
+
+    nav ul li {
+        background-color: #5C872D;
+
+    }
+
+
+    nav ul li a {
+        color: #000;
+        text-decoration: none;
+        padding: 15px;
+    }
+
+
+
+    nav ul li a:hover {
+        color: antiquewhite;
+    }
+    
+    table thead th {
+        font-size: 30px;
+    }
+    table tbody li {
+        font-size: 20px;
+        padding: 1em;
+}
+    
+    article p.town-article img {
+        /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+        /* fill the page in the small/phone view */
+    }
+
+    footer {}
+
+    footer aside {}
+
+    footer > p {}
+    /* responsive images */
+    .grid {}
+
+
+    .grid div img:hover {}
+
+    .grid div img:active {}
+}
+
+
+
+
+
+@media only screen and (min-width: 64em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    header {}
+
+    header img {}
+
+    header h1 {}
+
+    nav ul {
+        font-size: 25px;
+    }
+
+    nav ul li {}
+
+    nav ul li a {}
+
+
+    form#strmPage {}
+    main {}
+
+    main h2 {}
+
+    .highlow {}
+
+
+
+    .signup {
+        font-size: 20px;
+    }
+    main h3 {}
+
+    main figure {}
+
+
+
+}
+
+section {}
+
+article p.town-article img {
+    /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    /* fill the page in the small/phone view */
+}
+
+footer {}
+
+footer aside {}
+
+footer > p {}
+
+{}
+
+.grid {}
+
+img,
+div .grid {}
+
+.grid div img:hover {}
+
+.grid div img:active {}
+
+}

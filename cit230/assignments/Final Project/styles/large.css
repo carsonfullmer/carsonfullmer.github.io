@@ -1,0 +1,58 @@
+@media only screen and (min-width: 64em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+
+    header {}
+
+    header img {}
+
+    header h1 {}
+
+    nav ul {}
+
+    nav ul li {}
+
+    nav ul li a {}
+
+
+    form#strmPage {}
+    main {}
+
+    main h2 {}
+
+    .highlow {}
+
+    .forecast {}
+
+    table th td {}
+
+
+    main h3 {}
+
+    main figure {}
+
+    main figure img {}
+
+    section {}
+
+    article p.town-article img {
+        /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+        /* fill the page in the small/phone view */
+    }
+
+    footer {}
+
+    footer aside {}
+
+    footer > p {}
+
+    {}
+
+    .grid {}
+
+    img,
+    div .grid {}
+
+    .grid div img:hover {}
+
+    .grid div img:active {}
+}
