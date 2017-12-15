@@ -78,9 +78,6 @@ nav ul li a {
     text-decoration: none;
 }
 
-
-li:last-child {}
-
 nav ul li a:hover {
     background-color: #007bff;
     color: #e6f2ff;

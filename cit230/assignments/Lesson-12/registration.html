@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration</title>
+    <meta name="author" content="Carson Fullmer">
+    <meta name="description" content="page description placeholder">
+    <!--Google Font API-->
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <!--Normalize user agent/browser defaults-->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+</head>
+
+
+
+<body>
+    <header>
+    <img src="images/bikeLogo.png" alt="Logo">
+    <h1>The Mountain Spoke</h1>
+    </header>
+    <main>
+        <!--Website navigation-->
+    <nav id="nav">
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul>
+            <li><a href="finalProject.html">Home</a></li>
+            <li><a href="adventureTours.html">Adventure Tours</a></li>
+            <li><a href="event.html">Event</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="sales.html">Sales</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+        <form> 
+            <fieldset>
+                <legend>Continental Divide Registration</legend>
+            <label><span>Full Name: </span><input type="text" name="fullname" value="" placeholder="Full Name" pattern="[a-zA-z]{5, 99}" required></label>
+            <label><span>Email: </span><input type="email" G name="email" value="" placeholder="myemail@gmail.com" required></label>
+            <label><span>Phone number: </span><input type="tel" name="phoneNumber" value="" placeholder="3334445555" pattern="[0-9]{10, 20}" required></label>
+            <label><span>Date of Birth:
+            </span><input type="date" value=""></label>
+            <label><span>Home State: </span>
+            <select>
+	           <option value="AL">Alabama</option>
+	           <option value="AK">Alaska</option>
+	           <option value="AZ">Arizona</option>
+	           <option value="AR">Arkansas</option>
+	           <option value="CA">California</option>
+	           <option value="CO">Colorado</option>
+	           <option value="CT">Connecticut</option>
+	           <option value="DE">Delaware</option>
+	           <option value="DC">District Of Columbia</option>
+	           <option value="FL">Florida</option>
+	           <option value="GA">Georgia</option>
+	           <option value="HI">Hawaii</option>
+	           <option value="ID">Idaho</option>
+	           <option value="IL">Illinois</option>
+	           <option value="IN">Indiana</option>
+	           <option value="IA">Iowa</option>
+	           <option value="KS">Kansas</option>
+	           <option value="KY">Kentucky</option>
+	           <option value="LA">Louisiana</option>
+	           <option value="ME">Maine</option>
+	           <option value="MD">Maryland</option>
+	           <option value="MA">Massachusetts</option>
+	           <option value="MI">Michigan</option>
+	           <option value="MN">Minnesota</option>
+	           <option value="MS">Mississippi</option>
+	           <option value="MO">Missouri</option>
+	           <option value="MT">Montana</option>
+	           <option value="NE">Nebraska</option>
+	           <option value="NV">Nevada</option>
+	           <option value="NH">New Hampshire</option>
+	           <option value="NJ">New Jersey</option>
+	           <option value="NM">New Mexico</option>
+	           <option value="NY">New York</option>
+	           <option value="NC">North Carolina</option>
+	           <option value="ND">North Dakota</option>
+	           <option value="OH">Ohio</option>
+	           <option value="OK">Oklahoma</option>
+	           <option value="OR">Oregon</option>
+	           <option value="PA">Pennsylvania</option>
+	           <option value="RI">Rhode Island</option>
+	           <option value="SC">South Carolina</option>
+	           <option value="SD">South Dakota</option>
+	           <option value="TN">Tennessee</option>
+	           <option value="TX">Texas</option>
+	           <option value="UT">Utah</option>
+	           <option value="VT">Vermont</option>
+	           <option value="VA">Virginia</option>
+	           <option value="WA">Washington</option>
+	           <option value="WV">West Virginia</option>
+	           <option value="WI">Wisconsin</option>
+	           <option value="WY">Wyoming</option>
+            </select></label>
+            <label><span>Special Accomodations/Comments: </span><textarea rows="3" cols="19"style="height:40px"></textarea></label>
+            <label><input type="submit" name="submit"></label>
+            </fieldset>
+        </form>
+
+    </main>
+    <footer>
+        <aside>
+            <p>&copy; 2017 All Rights Reserved | The Mountain Spoke | <span id="currentdate"></span></p>
+        </aside>
+    </footer>
+
+    <script src="scripts/w3.js"></script>
+    <script src="scripts/modularize.js"></script>
+    <script src="scripts/currentdate.js"></script>
+
+</body>
+
+</html>

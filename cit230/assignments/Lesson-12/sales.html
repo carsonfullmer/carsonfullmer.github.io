@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sales</title>
+    <meta name="author" content="Carson Fullmer">
+    <meta name="description" content="page description placeholder">
+    <!--Google Font API-->
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <!--Normalize user agent/browser defaults-->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <script src="//code.js.com/jquery-3.2.1.min.js"></script>
+    <script>
+        $(function(){
+        
+        $('.navigation > li ').hover(function(){
+            //This code executes when the mouse hovers over the list item
+            
+            $(this).addClass('openSesame');
+        },function(){
+            //This code executes when the mouse leaves the list item
+            
+            $(this).removeClass('openSesame');
+        });
+
+	})
+    </script>
+</head>
+
+    <header>
+        <img src="images/bikeLogo.png" alt="Logo">
+        <h1>The Mountain Spoke</h1>
+    </header>
+
+<body>
+<main>
+    <!--Website navigation-->
+        <nav id="nav">
+            <button onclick="toggleNavMenu()">&#9776;</button>
+            <ul>
+                <li><a href="finalProject.html">Home</a></li>
+                <li><a href="adventureTours.html">Adventure Tours</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="sales.html">Sales</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    <p class="img1">
+            <img src="images/bike1.jpeg" alt="bike1">
+
+            <span class="nav"> The Lazy Rider is great for those who enjoy casual riding and light mountain biking. It offers great durability and comfort for $499.99
+            </span>
+        </p>
+
+        <p class="img2">
+            <img src="images/bike2.jpeg" alt="bike2">
+
+            <span class="p2"> The Extreme X-Factor is a grat choice for anybody looking for a great off-road experience. With its light frame and clip-in pedals, you can go on or off any trail. Base model sells for $799.99.
+            </span>
+        </p>
+        
+
+        <p class="img3">
+            <img src="images/bike3.jpeg" alt="bike3">
+
+            <span class="p3"> The All-In-One can accomodate even the most extreme riders. It has multiple options for tires to accomodate light or heavy mountin biking. The frame is light and sturdy and allows you do go wherever you want! Selling price is $999.99.
+            </span>
+        </p>
+</main>
+    <footer>
+        <aside>
+            <p>&copy; 2017 All Rights Reserved | The Mountain Spoke | <span id="currentdate"></span></p>
+        </aside>
+    </footer>
+    
+    <script src=""></script>
+    <script src="scripts/w3.js"></script>
+    <script src="scripts/modularize.js"></script>
+    <script src="scripts/currentdate.js"></script>
+</body>
+</html>
